@@ -1,0 +1,198 @@
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../fonts/Montserrat-Bold.eot');
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+  url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Montserrat-Bold.woff') format('woff'),
+  url('../fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../fonts/Montserrat-Regular.eot');
+  src: local('Montserrat-Regular'), local('Montserrat-Regular'),
+  url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Montserrat-Regular.woff') format('woff'),
+  url('../fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Bold';
+  src: url('../fonts/OpenSans-Bold.eot');
+  src: local('OpenSans-Bold'), local('OpenSans-Bold'),
+  url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans-Bold.woff') format('woff'),
+  url('../fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('../fonts/OpenSans-Regular.eot');
+  src: local('OpenSans-Regular'), local('OpenSans-Regular'),
+  url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans-Regular.woff') format('woff'),
+  url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GothamPro';
+  src: url('../fonts/GothamPro.eot');
+  src: local('GothamPro'), local('GothamPro'),
+  url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/GothamPro.woff') format('woff'),
+  url('../fonts/GothamPro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'OpenSans-Regular', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: $main_text_color;
+}
+
+menu, ol, ul {
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1210px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.title {
+   margin-bottom: 60px;
+   font-family: 'Montserrat-Bold', sans-serif;
+   font-size: 48px;
+   line-height: 59px;
+ }
+
+.title.title-main {
+  margin-top: 105px; // все курсы
+  margin-bottom: 50px; // все курсы
+  font-size: 72px;
+  line-height: 88px;
+}
+
+.title.title-main.title-trainers-all {
+  margin-top: 85px; // все тренеры
+}
+
+.title-paragraph {
+  margin-bottom: 10px;
+  font-family: 'OpenSans-Bold', sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.visibility-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+
+@media (max-width: 1439px) {
+  .container {
+    max-width: 970px;
+  }
+
+  .title {
+    margin-bottom: 48px;
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .title.title-main {
+    margin-top: 0; // все курсы
+    margin-bottom: 40px; // все курсы
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .title-paragraph {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    max-width: 650px;
+  }
+
+  .title {
+     margin-bottom: 40px;
+     font-size: 36px;
+     line-height: 44px;
+   }
+
+  .title.title-main {
+    margin-top: 64px; // все курсы
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .title.title-main.title-trainers-all {
+    margin-top: 80px; // все тренеры
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    margin-top: 0;
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  .title.title-main {
+    margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 27px;
+  }
+
+  .title.title-main.title-trainers-all {
+    margin-top: 75px; // все тренеры
+    margin-bottom: 30px; // все тренеры
+  }
+
+  .title-paragraph {
+    width: 266px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
+
+
+
+
+
