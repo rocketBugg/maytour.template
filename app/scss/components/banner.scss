@@ -1,3 +1,796 @@
-.index {
-  color: red;
+// Стили для Header
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  background-color: #FFFFFF;
+  z-index: 1;
 }
+
+.container--header {
+  width: 1215px;
+  margin: 0 auto; 
+  color: rgb(0, 0, 0);
+
+}
+
+.header__content {
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo_link {
+  width: 200px;
+  height: 72px;
+  margin-right: 121.5px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+
+
+.header__logo_link:hover svg path {
+  fill: #7e654e;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 573px;
+  height: 24px;
+
+}
+
+.title, .title1, .title2 {
+  color: #000000;
+}
+
+.title:hover a,
+.dropdown-1:hover a,
+.dropdown-2:hover a{
+  color: #FF7600;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+  width: 219px;
+  height: 40px;
+}
+
+.popup-menu-1,
+.popup-menu-2,
+.popup-menu-3{
+  position: relative;
+}
+
+
+.phone-number:hover {
+  cursor: pointer;
+}
+
+.header-login-button {
+  width: 80px;
+  height: 40px;
+}
+
+.login-button {
+  width: 80px;
+  height: 40px;
+  padding: 5px 16px;
+  border-radius: 8px;
+  background: #ffe4cc;
+  color: #ff7600;
+  border: none;
+  cursor: pointer;
+  font-family: 'MuseoSansCyrl-500';
+}
+
+.login-button:hover {
+  background: #ffcb9d; 
+  border: none; 
+  color: #ff7600;
+}
+
+// Выпадающие окна для header
+
+.dropdown-1, .dropdown-2, .dropdown-phone {
+  position: relative;
+}
+
+.dropdown-phone {
+  padding-top: 8px;
+}
+
+.dropdown-open-1,
+.dropdown-open-2,
+.dropdown-open-3 {
+  max-height: 0px;
+  transition: max-height 0.5s;
+  transition-delay: 0.1s;
+  overflow:hidden;
+  position: absolute;
+  width: 240px;
+  top: 0;
+  padding-top: 24px;
+}
+
+.dropdown-open-3 {
+  padding-top: 32px;
+}
+
+.dropdown-1:hover .dropdown-open-1,
+.dropdown-2:hover .dropdown-open-2,
+.dropdown-phone:hover .dropdown-open-3 {
+  background-color: white;
+  display: block;
+  max-height: 176px;
+  z-index: -1;
+}
+
+// .dropdown-1:hover .title1,
+// .dropdown-2:hover .title2,
+// .dropdown-phone:hover .phone-number {
+//   z-index: 2;
+// }
+
+.title1,
+.title2,
+.phone-number {
+  z-index: 3; 
+}
+// Стили для Footer
+
+.footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ebeaef;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.container-footer {
+  width: 1215px;
+  height: 124px;
+  margin: 0 auto;
+}
+
+.footer__row {
+  display: grid;
+  gap: 64px;
+  grid-template-columns: repeat(4, auto);
+}
+
+.footer__text {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5b5b5b;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.footer__nav-wrapper {
+  display: flex;
+  gap: 64px;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__nav-item {
+  display: grid;
+}
+.footer__nav-link {
+  margin-bottom: 24px;
+}
+
+.footer__nav-item-social {
+  margin-bottom: 16px;
+}
+
+.footer__nav-list li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer__nav-list li {
+  list-style-type: none;
+}
+
+.footer__nav-list li:hover a {
+  color: #ff7600;
+}
+
+.footer__nav-link-tg:hover svg rect {
+  fill: #229fda;
+}
+
+.footer__nav-link-vk:hover svg rect {
+  fill: #0077ff;
+}
+
+.footer__nav-link-ok:hover svg rect {
+  fill: #ff7700;
+}
+
+// Вход в систему log in
+
+.login {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-bottom: 64px;
+padding-top: 40px;
+}
+
+.login-container {
+  background-color: #ffffff;
+  border-radius: 24px;
+  width: 800px;
+  height: 348px;
+}
+
+.login-container-header{
+  padding: 24px;
+  padding-bottom: 32px;
+  background-color: #ffffff;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.login-title-container {
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.login-title {
+  font-family: 'MuseoSansCyrl700';
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.input-group {
+  position: relative;
+  width: 375px;
+  height: 72px;
+  margin-bottom: 40px;
+  display: flex;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 24px;
+  background-color: #F5F7FA;
+  border: none; 
+  color: #000000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.password-holder {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px; 
+}
+
+.username-holder {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px; 
+}
+
+.svg-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.input-group input:focus {
+  outline: none;
+}
+
+.login-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.entry {
+  display: flex;
+  padding: 10px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: var(--entry-background, #FF7600);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+.entry:focus {
+  outline: none;
+}
+
+.entry:active {
+  background: var(--entry-hover-background, #ED6E00);
+}
+
+.reset-password {
+  display: flex;
+  width: 199px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #FF7600;
+  border-radius: 8px;
+  padding: 10px 32px;
+  background: #ffffff;
+  color: #FF7600;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.reset-password:hover {
+  color: #ED6E00;
+}
+
+.reset-password:focus {
+  outline: none;
+  color: #ED6E00;
+}
+
+.login-container-footer {
+  display: flex;
+  width: 800px;
+  height: 73px;
+  padding: 24px;
+  border-bottom-left-radius: 24px; 
+  border-bottom-right-radius: 24px; 
+  border-top: 1px solid var(--border-color, #FFE4CC);
+  background: var(--background-color, rgba(255, 228, 204, 0.20));
+}
+
+.login-footer {
+  cursor: pointer;
+}
+
+.login-footer-orange {
+  margin-left: 32px;
+  color: #FF7600;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+// Регистрация физического лица
+
+.individual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 64px;
+  padding-top: 40px;
+  }
+  
+.individual-container {
+  background-color: #ffffff;
+  border-radius: 24px;
+  width: 800px;
+  height: 528px;
+  background-color: #ffffff;
+  padding: 24px;
+}
+  
+  .individual__bottom-content {
+    width: 752px;
+    height: 224px;
+  }
+
+  .individual__title {
+  margin-bottom: 24px;
+  font-weight: 600;
+  }
+  
+  .individual__title {
+    font-family: 'MuseoSansCyrl700';
+    font-size: 32px;
+    line-height: 40px;
+  }
+  
+  .individual__input-group, .individual__input-group-passwords {
+    position: relative;
+    width: 752px;
+    height: 72px;
+    margin-bottom: 24px;
+    display: flex;
+    width: 100%;
+  }
+  
+  .individual__input-group-passwords {
+    margin-bottom: 8px
+  }
+
+  .individual__input-group input,
+  .individual__input-group-passwords input {
+    flex: 1;
+    padding: 24px;
+    background-color: #F5F7FA;
+    border: none; 
+    color: #000000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+  }
+
+.individual__name {
+  border-radius: 16px;
+}
+
+.individual__phone-number{
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px; 
+}
+
+.individual__email  {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px; 
+}
+
+.individual__password {
+  width: 752px;
+  height: 104px;
+  margin-bottom: 32px;
+}
+
+.individual__password-input{
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px; 
+}
+
+.individual__password-repeat-input {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px; 
+}
+
+.svg-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  }
+  
+  .individual__input-group input:focus,
+  .individual__input-group-passwords input:focus {
+  outline: none;
+  }
+  
+
+.reset-password {
+  display: flex;
+  width: 199px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #FF7600;
+  border-radius: 8px;
+  padding: 10px 32px;
+  background: #ffffff;
+  color: #FF7600;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+  
+.reset-password:hover {
+  color: #ED6E00;
+}
+  
+.reset-password:focus {
+  outline: none;
+  color: #ED6E00;
+}
+
+.individual__bottom-symbols {
+  color: #8E8888;
+}
+
+
+
+.individual__footer {
+  width: 398px;
+  height: 28px;
+  margin-bottom: 16px;
+}
+
+.login-footer {
+  cursor: pointer;
+}
+  
+.login-footer-orange {
+  margin-left: 32px;
+  color: #FF7600;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.checkbox-wrapper-28 {
+  --size: 25px;
+  position: relative;
+  width: 398px;
+  height: 28px;
+  padding-top: 2px;
+}
+
+.checkbox-wrapper-28 *,
+.checkbox-wrapper-28 *:before,
+.checkbox-wrapper-28 *:after {
+  box-sizing: border-box;
+}
+
+.checkbox-wrapper-28 .promoted-input-checkbox {
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.checkbox-wrapper-28 input:checked ~ svg {
+  height: calc(var(--size) * 0.6);
+  -webkit-animation: draw-checkbox-28 ease-in-out 0.2s forwards;
+          animation: draw-checkbox-28 ease-in-out 0.2s forwards;
+}
+
+.checkbox-wrapper-28 label {
+  color: #000000;
+  line-height: var(--size);
+  cursor: pointer;
+  position: relative;
+}
+.checkbox-wrapper-28 label:after {
+  content: "";
+  height: 24px;
+  width: 24px;
+  margin-right: 14px;
+  padding: 2px;
+  float: left;
+  border: 1px solid #FF7600;
+  border-radius: 4px;
+  transition: 0.15s all ease-out;
+}
+
+.checkbox-wrapper-28 svg {
+  stroke: #FF7600;
+  stroke-width: 3px;
+  height: 0;
+  width: calc(var(--size) * 0.6);
+  position: absolute;
+  left: calc(var(--size) * 0.21);
+  top: calc(var(--size) * 0.2);
+  stroke-dasharray: 33;
+}
+
+.individual-data {
+  color: #FF7600;
+  font-weight: 600;
+}
+
+@-webkit-keyframes draw-checkbox-28 {
+  0% {
+    stroke-dashoffset: 33;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes draw-checkbox-28 {
+  0% {
+    stroke-dashoffset: 33;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.individual-buttons {
+  display: flex;
+
+}
+
+.entry-button {
+  display: flex;
+  padding: 10px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: var(--entry-background, #FF7600);
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  margin-right: 16px;
+}
+
+.entry-button:focus {
+  outline: none;
+}
+
+.entry-button:active {
+  background: var(--entry-hover-background, #ED6E00);
+}
+
+.reset-password-button {
+  display: flex;
+  width: 130px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #FF7600;
+  border-radius: 8px;
+  padding: 10px 40px;
+  background: #ffffff;
+  color: #FF7600;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.reset-password-button:hover {
+  color: #ED6E00;
+}
+
+.reset-password-button:focus {
+  outline: none;
+  color: #ED6E00;
+}
+
+// Регистрация юридического лица
+
+.agency {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-bottom: 64px;
+  padding-top: 40px;
+  }
+  
+  .agency-container {
+    background-color: #ffffff;
+    border-radius: 24px;
+    width: 800px;
+    height: 624px;
+    background-color: #ffffff;
+    padding: 24px;
+  }
+  
+  .agency__bottom-content {
+    width: 752px;
+    height: 224px;
+  }
+
+  .agency__title {
+    margin-bottom: 24px;
+    font-weight: 600;
+  }
+  
+  .agency__title {
+    font-family: 'MuseoSansCyrl700';
+    font-size: 32px;
+    line-height: 40px;
+  }
+  
+  .agency__input-group, .agency__input-group-passwords {
+    position: relative;
+    width: 752px;
+    height: 72px;
+    margin-bottom: 24px;
+    display: flex;
+    width: 100%;
+  }
+  
+  .agency__input-group-passwords {
+    margin-bottom: 8px
+  }
+
+  .agency__input-group input,
+  .agency__input-group-passwords input {
+    flex: 1;
+    padding: 24px;
+    background-color: #F5F7FA;
+    border: none; 
+    color: #000000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+  }
+
+.agency__name {
+  border-radius: 16px;
+}
+
+.agency__input-left {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.agency__input-right {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px; 
+}
+
+.agency__password {
+  width: 752px;
+  height: 104px;
+  margin-bottom: 32px;
+}
+
+.agency__password-repeat-input {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px; 
+}
+
+.svg-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  }
+  
+  .agency__input-group input:focus,
+  .agency__input-group-passwords input:focus {
+  outline: none;
+  }
+
+  .agency-buttons {
+    display: flex;
+  }
+
+.agency__footer {
+  width: 398px;
+  height: 28px;
+  margin-bottom: 16px;
+}
+
+  .agency__bottom-symbols {
+    color: #8E8888;
+  }
