@@ -1,0 +1,81 @@
+.awards {
+  background-color: $light__orange;
+}
+
+.awards__header {
+  margin-bottom: 40px;
+  font-family: "Museo Sans Cyrl";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+  color: $black;
+}
+
+.awards-links {
+  gap: 32px;
+}
+
+.awards-card {
+  margin: 0;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.first-award {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  background-image: url('../../img/awards-bg-crown.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+
+.second-award {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  background-image: url('../../img/awards-bg-crown.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+
+.third-award {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: flex-start;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  background-image: url('../../img/awards-bg-star.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+}
+
+.award-card__descr {
+  font-family: "Museo Sans Cyrl";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  color: $black;
+}
+
+.award-card__date {
+  margin: 0;
+  font-family: "Museo Sans Cyrl";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  color: $black;
+}

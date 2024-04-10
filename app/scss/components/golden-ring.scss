@@ -1,0 +1,120 @@
+.golden-ring {
+  background: $white;
+}
+
+.golden-ring-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.golden-ring__header {
+  margin-bottom: 24px;
+  font-family: "Museo Sans Cyrl";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 48px;
+  color: $black;
+}
+
+.golden-ring__descr {
+  font-family: "Museo Sans Cyrl";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  color: $black;
+}
+
+.golden-ring-bottom {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  min-width: 100%;
+  min-height: 480px;
+  padding: 40px;
+  padding-left: 54px;
+  padding-top: 56px;
+  background-image: url('../../img/golden-ring-slider-1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 24px;
+  z-index: 1;
+}
+
+.golden-ring-bottom::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.50);
+  border-radius: 24px;
+  z-index: 10;
+}
+
+.golden-ring-slider__header {
+  font-family: "Museo Sans Cyrl";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px;
+  color: $white;
+  z-index: 100;
+}
+
+.golden-ring-slider__descr {
+  max-width: 628px;
+  font-family: "Museo Sans Cyrl";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  color: $white;
+  z-index: 100;
+}
+
+.golden-ring-left {
+  min-height: 416px;
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.left-top-slider {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.golden-ring-right {
+  margin: 0;
+  z-index: 100;
+}
+
+.buttons {
+  display: flex;
+  margin: 0;
+  margin-top: auto;
+  gap: 16px;
+  z-index: 100;
+}
+
+.btn-arrows {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid $currency;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(2.000000238418579px);
+  z-index: 100;
+  transition: background-color ease .5s;
+  &:hover {
+    background-color: $button-hover;
+  }
+}

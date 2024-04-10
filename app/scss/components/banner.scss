@@ -1,3 +1,248 @@
-.index {
-  color: red;
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.40);
+  z-index: 1;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.banner {
+  height: 800px;
+  position: relative;
+  padding-top: 168px;
+  background-image: url('../../img/image36bg-banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  z-index: 0;
+}
+
+.banner-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.banner__header {
+  font-size: 78px;
+  line-height: 86px;
+  font-weight: 600;
+  color: $white;
+  z-index: 10;
+}
+
+.banner__paragraph {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 400;
+  color: $white;
+  margin: 0;
+  margin-bottom: auto;
+  z-index: 10;
+}
+
+.select {
+  margin-top: auto;
+  position: relative;
+}
+
+
+
+.select__header {
+  position: relative;
+  display: flex;
+  height: 72px;
+  padding: 24px;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1 0 0;
+  cursor: pointer;
+  min-width: 420px;
+  margin: 0;
+  background-color: $white;
+  font-family: "Museo Sans Cyrl";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  z-index: 100;
+  transition: background-color ease .5s;
+
+  &:hover {
+    background-color: $button-hover;
+  }
+}
+
+.select__header::after {
+  content: '';
+  height: 36px;
+  width: 2px;
+  position: absolute;
+  right: 0;
+  top: 25%;
+  background-color: #DFDADA;
+}
+
+.select__current {
+  padding: 8px;
+  font-size: 18px;
+  line-height: 24px;
+  z-index: 100;
+}
+
+.select__icon {
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-shrink: 0;
+  z-index: 100;
+}
+
+.select__body {
+  max-width: 435px;
+  margin: 0;
+  border-top: 0;
+  z-index: 100;
+}
+
+.select__item {
+  display: none;
+  line-height: 24px;
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 100;
+
+  &:hover {
+    background-color: #f2f2f2;
+  }
+}
+
+.select.is-active {
+  .select__item {
+    display: block;
+  }
+}
+
+.select__header {
+  display: flex;
+  z-index: 100;
+}
+
+.select__current {
+  margin: 0;
+  padding: 8px;
+  font-size: 18px;
+  line-height: 24px;
+  z-index: 100;
+}
+
+.select__icon {
+  width: 14px;
+  height: 7px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-shrink: 0;
+  z-index: 100;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.bottom {
+  display: flex;
+}
+
+.revert {
+  transform: rotate(0.5turn);
+}
+
+.search-btn {
+  display: flex;
+  width: 72px;
+  height: 72px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  background-color: $button-color;
+  z-index: 100;
+  border-radius: 0 16px 0 0;
+  transition: background-color ease .3s;
+
+  &:hover {
+    background-color: $button-hover;
+  }
+}
+
+.banner-left-select {
+  min-width: 435px;
+  border-radius: 16px 0 0 0;
+}
+
+.date-input {
+  width: 285px;
+  padding: 24px;
+  transition: background-color ease .3s;
+  border: none;
+  z-index: 100;
+  color: $black;
+
+  &:hover {
+    background-color: $button-hover;
+  }
+}
+
+::placeholder {
+  color: $black;
+}
+
+
+.btn-banner {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid $currency;
+  background: rgba(255, 144, 46, 0.30);
+  backdrop-filter: blur(6.650000095367432px);
+  z-index: 100;
+  transition: background-color ease .5s;
+
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  background: rgba(255, 144, 46, 0.30);
+}
+
+.buttons__banner {
+  margin-top: auto;
+  margin: 0;
+  padding-top: 221px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  z-index: 100;
+
 }

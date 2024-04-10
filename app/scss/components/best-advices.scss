@@ -1,0 +1,136 @@
+.best-advices__container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.advices-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 32px;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.section__header {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  font-family: 'MuseoSansCyrl700';
+}
+
+.best-advices {
+  background: $light_gray;
+}
+
+.best-advices__block {
+  display: flex;
+  position: relative;
+  width: 280px;
+  padding: 4px;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0px 1px 4px 0px rgba(235, 233, 232, 0.73), 0px 24px 48px 0px rgba(230, 235, 245, 0.40);
+  border-radius: 24px;
+  background: $white;
+}
+
+.advice-img {
+  border-radius: 20px;
+  z-index: 1;
+}
+
+.block-descr {
+  max-height: 48px;
+  font-family: "Museo Sans Cyrl";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  align-self: stretch
+}
+
+.block-header {
+  margin-bottom: 4px;
+  font-family: "Museo Sans Cyrl";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  max-height: 48px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.best-advices__currency {
+  font-family: "Museo Sans Cyrl";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  color: $currency;
+}
+
+.best-advices__value {
+  font-family: "Museo Sans Cyrl";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  color: $black;
+  z-index: 100;
+}
+
+.best-advices__price {
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  display: flex;
+  flex-direction: row;
+  padding: 4px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  background-image: url('../../img/Union.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border-radius: 16px 0px 16px 0px;
+  z-index: 100;
+}
+
+.best-advices__block-descr {
+  padding: 12px;
+}
+
+.button {
+  display: flex;
+  padding: 10px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: "Museo Sans Cyrl";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  color: $white;
+  background-color: $button-color;
+  border-radius: 8px;
+}
+
+.advices-button {
+  max-width: 187px;
+  transition: background-color ease .3s;
+  &:hover {
+    background-color: $button-hover;
+
+  }
+}

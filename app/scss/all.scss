@@ -1,71 +1,138 @@
+// @font-face {
+//   font-family: 'Museo Sans Cyrl';
+//   src: url('../fonts/MuseoSansCyrl-Thin.eot');
+//   src: local('Museo Sans Cyrl Thin'), local('Museo Sans Cyrl Thin'),
+//   url('../fonts/MuseoSansCyrl-Thin.eot?#iefix') format('embedded-opentype'),
+//   url('../fonts/MuseoSansCyrl-Thin.woff') format('woff'),
+//   url('../fonts/MuseoSansCyrl-Thin.ttf') format('truetype');
+//   font-weight: thin;
+//   font-style: normal;
+// }
+
+
+
+// @font-face {
+//   font-family: 'Museo Sans Cyrl';
+//   src: url('../fonts/MuseoSansCyrl-Light.eot');
+//   src: local('Museo Sans Cyrl Light'), local('Museo Sans Cyrl Light'),
+//   url('../fonts/MuseoSansCyrl-Light.eot?#iefix') format('embedded-opentype'),
+//   url('../fonts/MuseoSansCyrl-Light.woff') format('woff'),
+//   url('../fonts/MuseoSansCyrl-Light.ttf') format('truetype');
+//   font-weight: light;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Museo Sans Cyrl';
+//   src: url('../fonts/MuseoSansCyrl-Medium.eot');
+//   src: local('Museo Sans Cyrl Medium'), local('Museo Sans Cyrl Medium'),
+//   url('../fonts/MuseoSansCyrl-Medium.eot?#iefix') format('embedded-opentype'),
+//   url('../fonts/MuseoSansCyrl-Medium.woff') format('woff'),
+//   url('../fonts/MuseoSansCyrl-Medium.ttf') format('truetype');
+//   font-weight: medium;
+//   font-style: normal;
+// }
+
+// @font-face {
+//   font-family: 'Museo Sans Cyrl';
+//   src: url('../fonts/MuseoSansCyrl-Bold.eot');
+//   src: local('Museo Sans Cyrl Bold'), local('Museo Sans Cyrl Bold'),
+//   url('../fonts/MuseoSansCyrl-Bold.eot?#iefix') format('embedded-opentype'),
+//   url('../fonts/MuseoSansCyrl-Bold.woff') format('woff'),
+//   url('../fonts/MuseoSansCyrl-Bold.ttf') format('truetype');
+//   font-weight: bold;
+//   font-style: normal;
+// }
+
+
 @font-face {
-  font-family: 'Montserrat-Bold';
-  src: url('../fonts/Montserrat-Bold.eot');
-  src: local('Montserrat Bold'), local('Montserrat-Bold'),
-  url('../fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Montserrat-Bold.woff') format('woff'),
-  url('../fonts/Montserrat-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
+  font-family: 'MuseoSansCyrl100';
+  src: url('../fonts/MuseoSansCyrl-100.ttf') format('truetype'),
 }
 
 @font-face {
-  font-family: 'Montserrat-Regular';
-  src: url('../fonts/Montserrat-Regular.eot');
-  src: local('Montserrat-Regular'), local('Montserrat-Regular'),
-  url('../fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/Montserrat-Regular.woff') format('woff'),
-  url('../fonts/Montserrat-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'MuseoSansCyrl300';
+  src: url('../fonts/MuseoSansCyrl-300.ttf') format('truetype'),
 }
 
 @font-face {
-  font-family: 'OpenSans-Bold';
-  src: url('../fonts/OpenSans-Bold.eot');
-  src: local('OpenSans-Bold'), local('OpenSans-Bold'),
-  url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/OpenSans-Bold.woff') format('woff'),
-  url('../fonts/OpenSans-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
+  font-family: 'MuseoSansCyrl500';
+  src: url('../fonts/MuseoSansCyrl-500.ttf') format('truetype'),
 }
 
 @font-face {
-  font-family: 'OpenSans-Regular';
-  src: url('../fonts/OpenSans-Regular.eot');
-  src: local('OpenSans-Regular'), local('OpenSans-Regular'),
-  url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/OpenSans-Regular.woff') format('woff'),
-  url('../fonts/OpenSans-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'MuseoSansCyrl700';
+  src: url('../fonts/MuseoSansCyrl-700.ttf') format('truetype'),
 }
 
 @font-face {
-  font-family: 'GothamPro';
-  src: url('../fonts/GothamPro.eot');
-  src: local('GothamPro'), local('GothamPro'),
-  url('../fonts/GothamPro.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/GothamPro.woff') format('woff'),
-  url('../fonts/GothamPro.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'MuseoSansCyrl900';
+  src: url('../fonts/MuseoSansCyrl-900.ttf') format('truetype'),
 }
 
 *{
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  font-family: 'OpenSans-Regular', sans-serif;
+  font-family: 'Museo Sans Cyrl', sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: normal;
 }
 
 a {
+  color: inherit;
   text-decoration: none;
-  color: $main_text_color;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 320px;
+  font-family: 'Open Sans', 'sans-serif';
+  background: var(--color-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.list-reset {
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+.flex {
+  display: flex;
+}
+
+body {
+z-index: 10;
 }
 
 menu, ol, ul {
@@ -80,119 +147,8 @@ menu, ol, ul {
   padding-right: 15px;
 }
 
-.title {
-   margin-bottom: 60px;
-   font-family: 'Montserrat-Bold', sans-serif;
-   font-size: 48px;
-   line-height: 59px;
- }
-
-.title.title-main {
-  margin-top: 105px; // все курсы
-  margin-bottom: 50px; // все курсы
-  font-size: 72px;
-  line-height: 88px;
+.section-offset {
+  padding: 64px 0;
 }
-
-.title.title-main.title-trainers-all {
-  margin-top: 85px; // все тренеры
-}
-
-.title-paragraph {
-  margin-bottom: 10px;
-  font-family: 'OpenSans-Bold', sans-serif;
-  font-size: 20px;
-  line-height: 27px;
-}
-
-.visibility-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
-
-@media (max-width: 1439px) {
-  .container {
-    max-width: 970px;
-  }
-
-  .title {
-    margin-bottom: 48px;
-    font-size: 36px;
-    line-height: 44px;
-  }
-
-  .title.title-main {
-    margin-top: 0; // все курсы
-    margin-bottom: 40px; // все курсы
-    font-size: 48px;
-    line-height: 60px;
-  }
-
-  .title-paragraph {
-    font-size: 18px;
-    line-height: 25px;
-  }
-}
-
-@media (max-width: 1023px) {
-  .container {
-    max-width: 650px;
-  }
-
-  .title {
-     margin-bottom: 40px;
-     font-size: 36px;
-     line-height: 44px;
-   }
-
-  .title.title-main {
-    margin-top: 64px; // все курсы
-    font-size: 36px;
-    line-height: 44px;
-  }
-
-  .title.title-main.title-trainers-all {
-    margin-top: 80px; // все тренеры
-  }
-}
-
-@media (max-width: 767px) {
-  .title {
-    margin-top: 0;
-    font-size: 22px;
-    line-height: 27px;
-  }
-
-  .title.title-main {
-    margin-bottom: 30px;
-    font-size: 22px;
-    line-height: 27px;
-  }
-
-  .title.title-main.title-trainers-all {
-    margin-top: 75px; // все тренеры
-    margin-bottom: 30px; // все тренеры
-  }
-
-  .title-paragraph {
-    width: 266px;
-  }
-}
-
-@media (max-width: 576px) {
-  .container {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-
-
-
-
-
 
 
