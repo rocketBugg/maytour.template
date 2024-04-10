@@ -1,17 +1,10 @@
+let title1 = document.querySelector('.title1');
+let dropdownOpen1 = document.querySelector('.dropdown-open-1');
 
-//= ../../node_modules/bootstrap/js/dist/index.js
-//= ../../node_modules/bootstrap/js/dist/util.js
-//= ../../node_modules/bootstrap/js/dist/tooltip.js
-//= ../../node_modules/bootstrap/js/dist/alert.js
-//= ../../node_modules/bootstrap/js/dist/button.js
-//= ../../node_modules/bootstrap/js/dist/carousel.js
-//= ../../node_modules/bootstrap/js/dist/collapse.js
-//= ../../node_modules/bootstrap/js/dist/dropdown.js
-//= ../../node_modules/bootstrap/js/dist/modal.js
-//= ../../node_modules/bootstrap/js/dist/popover.js
-//= ../../node_modules/bootstrap/js/dist/scrollspy.js
-//= ../../node_modules/bootstrap/js/dist/tab.js
-//= ../../node_modules/bootstrap/js/dist/toast.js
-
-
-
+title1.addEventListener('click', function() {
+  if (dropdownOpen1.style.display === 'none' || dropdownOpen1.style.display === '') {
+    dropdownOpen1.style.display = 'block';
+  } else {
+    dropdownOpen1.style.display = 'none';
+  }
+});
